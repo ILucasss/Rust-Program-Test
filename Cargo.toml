@@ -1,0 +1,15 @@
+[package]
+name = "rust_program_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+rand = "0.8.3"
+
+[features]
+number_guess=[]
+Var_and_Mut=[]
+shadowing=[]
