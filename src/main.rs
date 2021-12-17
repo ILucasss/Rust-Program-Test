@@ -1,15 +1,21 @@
-use rust_program_test::cap2::number_guess::number_guess;
-use rust_program_test::cap3::var_and_mut::var_and_mut;
-use rust_program_test::cap3::shadowing::shadowing;
+use rust_program_test::cap2::cap2::cap2;
+use rust_program_test::cap3::cap3::cap3;
+use rust_program_test::cap4::cap4::cap4;
+use rust_program_test::cap5::cap5::cap5;
+//use rust_program_test::cap5::cap5::cap5;
+
 
 fn main() {
-    #[cfg(feature = "number_guess")]
-    number_guess();
+    #[cfg(feature = "cap2")]
+    cap2();
 
-    #[cfg(feature = "Var_and_Mut")]
-    var_and_mut();
+    #[cfg(feature = "cap3")]
+    cap3();
 
-    #[cfg(feature = "shadowing")]
-    shadowing();
+    #[cfg(feature = "cap4")]
+    cap4();
+
+    #[cfg(feature = "cap5")]
+    cap5();
 
 }
