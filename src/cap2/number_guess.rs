@@ -1,5 +1,6 @@
-use std::io;
-use std::cmp::Ordering;
+//use std::io;
+//use std::cmp::Ordering;
+use std::{cmp::Ordering, io};       //嵌套路径来消除大量的 use 行
 use rand::Rng;
 
 
