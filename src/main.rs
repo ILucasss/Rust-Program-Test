@@ -6,6 +6,7 @@ use rust_program_test::cap6::cap6::cap6;
 use rust_program_test::cap7::cap7::cap7;
 use rust_program_test::cap7::mod_path as pub_as;
 use rust_program_test::cap8::cap8::cap8;
+use rust_program_test::cap9::cap9::cap9;
 
 fn main() {
     #[cfg(feature = "cap2")]
@@ -30,4 +31,8 @@ fn main() {
 
     #[cfg(feature = "cap8")]
     cap8();
+
+    #[cfg(feature = "cap9")]
+    cap9();
+
 }
