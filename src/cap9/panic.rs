@@ -24,7 +24,8 @@ pub fn panic() {
 }
 
 // 如果 Result 的值是 Ok，这个表达式将会返回 Ok 中的值而程序将继续执行。
-// 如果值是 Err，? 运算符会提早返回整个函数并将一些 Err 值传播给调用者,Err 中的值将作为整个函数的返回值
+// 如果值是 Err，? 运算符会提早返回整个函数并将一些 Err 值传播给调用者,
+// Err 中的值将作为整个函数的返回值
 pub fn read_username_from_file() -> Result<String, io::Error> {
     let mut f = File::open("hello.txt")?;
     let mut s = String::new();
